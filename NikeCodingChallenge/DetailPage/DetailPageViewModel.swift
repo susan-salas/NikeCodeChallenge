@@ -23,18 +23,22 @@ class DetailPageViewModel  {
     
     init(with album: Album) {
         model = album
-        albumImage = album.artworkUrl100
-        albumName = album.name
-        artistName = album.artistName
-        genre = album.genres.first?.name ?? ""
-        releaseDate = "Released: \(album.releaseDate)"
-        copyRightInfo = album.copyright
-        albumURL = album.url
+        albumImage = album.artworkUrl100 ?? ""
+        albumName = album.name ?? ""
+        artistName = album.artistName ?? ""
+        genre = album.genres?.first?.name ?? ""
+        if let date = album.releaseDate {
+            releaseDate = "Released: \(date)"
+        }else {
+            releaseDate = ""
+        }
+        copyRightInfo = album.copyright ?? ""
+        albumURL = album.url ?? ""
     }
     
     func getItunesLink() -> String{
         
-        return model.url.replacingOccurrences(of: "https", with: "itms")
+        return model.url?.replacingOccurrences(of: "https", with: "itms") ?? ""
         
     }
     

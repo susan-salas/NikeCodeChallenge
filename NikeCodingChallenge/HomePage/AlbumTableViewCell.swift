@@ -69,7 +69,7 @@ class AlbumTableViewCell: UITableViewCell {
     
     func setCell(with album: Album) {
         
-        albumImageView.loadImage(from: album.artworkUrl100)
+        albumImageView.loadImage(from: album.artworkUrl100 ?? "")
         albumNameLabel.text = album.name
         artistNameLabel.text = album.artistName
     }

@@ -10,5 +10,5 @@ import Foundation
 
 struct FeedResponse: Decodable {
     
-    let feed:Feed
+    let feed:Feed?
 }

@@ -25,7 +25,9 @@ class HomePageViewModel {
         sessionProvider.request(type: FeedResponse.self, service: FeedAPI.getTop100Albums) {  [weak self] (response) in
             switch response {
             case let .success(response):
-                self?.albumData.value = response.feed.results
+                if let results = response.feed?.results {
+                    self?.albumData.value = results
+                }
             case let .failure(error):
                 print(error)
             }

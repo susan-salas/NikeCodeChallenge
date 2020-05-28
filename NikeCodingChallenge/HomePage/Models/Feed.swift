@@ -10,7 +10,7 @@ import Foundation
 
 struct Feed: Decodable {
     
-    let id:String
-    let title:String
-    let results:[Album]
+    let id:String?
+    let title:String?
+    let results:[Album]?
 }

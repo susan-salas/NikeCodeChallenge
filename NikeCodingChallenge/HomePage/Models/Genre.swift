@@ -10,6 +10,6 @@ import Foundation
 
 struct Genre: Decodable {
     
-    let genreId:String
-    let name:String
+    let genreId:String?
+    let name:String?
 }
