@@ -39,9 +39,9 @@ class NikeCodingChallengeTests: XCTestCase {
         dataProvider.request(type: FeedResponse.self, service: FeedAPI.getTop100Albums) { (response) in
             switch response {
             case let .success(response):
-                XCTAssertEqual(response.feed.results.first?.name, "After Hours (Deluxe)")
-                XCTAssertEqual(response.feed.results.first?.artistName, "The Weeknd")
-                XCTAssertEqual(response.feed.results.first?.artworkUrl100, "https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/3d/c3/84/3dc384fd-1f26-1df6-47e0-a9af382f2a98/20UMGIM21166.rgb.jpg/200x200bb.png")
+                XCTAssertEqual(response.feed?.results?.first?.name, "After Hours (Deluxe)")
+                XCTAssertEqual(response.feed?.results?.first?.artistName, "The Weeknd")
+                XCTAssertEqual(response.feed?.results?.first?.artworkUrl100, "https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/3d/c3/84/3dc384fd-1f26-1df6-47e0-a9af382f2a98/20UMGIM21166.rgb.jpg/200x200bb.png")
             default:
                 break
             }

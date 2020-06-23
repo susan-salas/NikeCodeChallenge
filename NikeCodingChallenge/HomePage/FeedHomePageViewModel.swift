@@ -7,17 +7,17 @@
 //
 
 import Foundation
+import RxSwift
 
 
 class HomePageViewModel {
 
-    var albumData:Observable<[Album]>
+    var albumData:PublishSubject<[Album]> = PublishSubject()
     private var sessionProvider:URLSessionProvider
 
     init(dataProvider: URLSessionProvider = URLSessionProvider()) {
         self.sessionProvider = dataProvider
         
-        albumData = Observable.init([])
     }
     
     
@@ -26,7 +26,8 @@ class HomePageViewModel {
             switch response {
             case let .success(response):
                 if let results = response.feed?.results {
-                    self?.albumData.value = results
+                    
+                    self?.albumData.onNext(results)
                 }
             case let .failure(error):
                 print(error)

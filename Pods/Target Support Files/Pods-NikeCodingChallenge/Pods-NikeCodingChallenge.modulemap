@@ -1,0 +1,6 @@
+framework module Pods_NikeCodingChallenge {
+  umbrella header "Pods-NikeCodingChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

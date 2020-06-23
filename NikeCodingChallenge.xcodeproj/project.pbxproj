@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,7 +28,6 @@
 		362723E124339C7300376522 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362723E024339C7300376522 /* FeedResponse.swift */; };
 		362723E32433B52100376522 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362723E22433B52100376522 /* Feed.swift */; };
 		362723E52433B60600376522 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362723E42433B60600376522 /* AlbumTableViewCell.swift */; };
-		362723E824341B1800376522 /* Obvservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362723E724341B1800376522 /* Obvservable.swift */; };
 		362723EA2434FB3000376522 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362723E92434FB3000376522 /* Genre.swift */; };
 		3636A8B4243527FF00108035 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3636A8B3243527FF00108035 /* URLSessionMock.swift */; };
 		3636A8B72435285E00108035 /* getTop100Albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 3636A8B62435285E00108035 /* getTop100Albums.json */; };
@@ -39,6 +38,9 @@
 		3672EB2E24297BA400905E57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3672EB2C24297BA400905E57 /* LaunchScreen.storyboard */; };
 		3672EB3924297BA500905E57 /* NikeCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3672EB3824297BA500905E57 /* NikeCodingChallengeTests.swift */; };
 		3672EB4424297BA500905E57 /* NikeCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3672EB4324297BA500905E57 /* NikeCodingChallengeUITests.swift */; };
+		380261226732444205D90295 /* Pods_NikeCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193A1346D68BB34FDE7FA37 /* Pods_NikeCodingChallengeTests.framework */; };
+		86193170AD3335DF36464668 /* Pods_NikeCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5149574C70CFE69D7EB9993D /* Pods_NikeCodingChallenge.framework */; };
+		CA447B845DF8909F3AD64BED /* Pods_NikeCodingChallenge_NikeCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DCC4E5D0BAA64979FFB77D /* Pods_NikeCodingChallenge_NikeCodingChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24DCC4E5D0BAA64979FFB77D /* Pods_NikeCodingChallenge_NikeCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikeCodingChallenge_NikeCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		362723B32432CD7400376522 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		362723B42432CD7400376522 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		362723B52432CD7400376522 /* URLComponents+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extensions.swift"; sourceTree = "<group>"; };
@@ -80,7 +83,6 @@
 		362723E024339C7300376522 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		362723E22433B52100376522 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		362723E42433B60600376522 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
-		362723E724341B1800376522 /* Obvservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obvservable.swift; sourceTree = "<group>"; };
 		362723E92434FB3000376522 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		3636A8B3243527FF00108035 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		3636A8B62435285E00108035 /* getTop100Albums.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = getTop100Albums.json; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 		3672EB3F24297BA500905E57 /* NikeCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3672EB4324297BA500905E57 /* NikeCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		3672EB4524297BA500905E57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C05298B6D9098FB7E2CDFD /* Pods-NikeCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-NikeCodingChallenge/Pods-NikeCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5149574C70CFE69D7EB9993D /* Pods_NikeCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikeCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5A27A7AAECCF1CEE00BDD9 /* Pods-NikeCodingChallenge-NikeCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeCodingChallenge-NikeCodingChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-NikeCodingChallenge-NikeCodingChallengeUITests/Pods-NikeCodingChallenge-NikeCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8193A1346D68BB34FDE7FA37 /* Pods_NikeCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikeCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85650D0B79378D9D5EFFA5A3 /* Pods-NikeCodingChallenge-NikeCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeCodingChallenge-NikeCodingChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-NikeCodingChallenge-NikeCodingChallengeUITests/Pods-NikeCodingChallenge-NikeCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0235D1372945389E05610CA /* Pods-NikeCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-NikeCodingChallenge/Pods-NikeCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F5DFC0865B23B7979A0738 /* Pods-NikeCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-NikeCodingChallengeTests/Pods-NikeCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C392F66E2BC468E2E722354A /* Pods-NikeCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeCodingChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-NikeCodingChallengeTests/Pods-NikeCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86193170AD3335DF36464668 /* Pods_NikeCodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380261226732444205D90295 /* Pods_NikeCodingChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,12 +130,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA447B845DF8909F3AD64BED /* Pods_NikeCodingChallenge_NikeCodingChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2713CA2310D84E57CD6FDEAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0235D1372945389E05610CA /* Pods-NikeCodingChallenge.debug.xcconfig */,
+				42C05298B6D9098FB7E2CDFD /* Pods-NikeCodingChallenge.release.xcconfig */,
+				7A5A27A7AAECCF1CEE00BDD9 /* Pods-NikeCodingChallenge-NikeCodingChallengeUITests.debug.xcconfig */,
+				85650D0B79378D9D5EFFA5A3 /* Pods-NikeCodingChallenge-NikeCodingChallengeUITests.release.xcconfig */,
+				B7F5DFC0865B23B7979A0738 /* Pods-NikeCodingChallengeTests.debug.xcconfig */,
+				C392F66E2BC468E2E722354A /* Pods-NikeCodingChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		362723592432739000376522 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,14 +213,6 @@
 			path = DetailPage;
 			sourceTree = "<group>";
 		};
-		362723E624341AE700376522 /* Observable */ = {
-			isa = PBXGroup;
-			children = (
-				362723E724341B1800376522 /* Obvservable.swift */,
-			);
-			path = Observable;
-			sourceTree = "<group>";
-		};
 		362723EB2434FB8300376522 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +247,8 @@
 				3672EB3724297BA500905E57 /* NikeCodingChallengeTests */,
 				3672EB4224297BA500905E57 /* NikeCodingChallengeUITests */,
 				3672EB1F24297B9E00905E57 /* Products */,
+				2713CA2310D84E57CD6FDEAD /* Pods */,
+				3A8A58A8BD2B9CA173F2E644 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,7 +265,6 @@
 		3672EB2024297B9E00905E57 /* NikeCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				362723E624341AE700376522 /* Observable */,
 				3627235A2432739C00376522 /* Extensions */,
 				362723592432739000376522 /* Network */,
 				362723D22432D11500376522 /* HomePage */,
@@ -280,6 +299,16 @@
 			path = NikeCodingChallengeUITests;
 			sourceTree = "<group>";
 		};
+		3A8A58A8BD2B9CA173F2E644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5149574C70CFE69D7EB9993D /* Pods_NikeCodingChallenge.framework */,
+				24DCC4E5D0BAA64979FFB77D /* Pods_NikeCodingChallenge_NikeCodingChallengeUITests.framework */,
+				8193A1346D68BB34FDE7FA37 /* Pods_NikeCodingChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3672EB4824297BA500905E57 /* Build configuration list for PBXNativeTarget "NikeCodingChallenge" */;
 			buildPhases = (
+				16018388E9E95B6B6DC1DF93 /* [CP] Check Pods Manifest.lock */,
 				3672EB1A24297B9E00905E57 /* Sources */,
 				3672EB1B24297B9E00905E57 /* Frameworks */,
 				3672EB1C24297B9E00905E57 /* Resources */,
+				E379B119E5FC92C8B0C461B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3672EB4B24297BA500905E57 /* Build configuration list for PBXNativeTarget "NikeCodingChallengeTests" */;
 			buildPhases = (
+				E1F75C6446E92FB5CF04C78F /* [CP] Check Pods Manifest.lock */,
 				3672EB3024297BA500905E57 /* Sources */,
 				3672EB3124297BA500905E57 /* Frameworks */,
 				3672EB3224297BA500905E57 /* Resources */,
@@ -322,9 +354,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3672EB4E24297BA500905E57 /* Build configuration list for PBXNativeTarget "NikeCodingChallengeUITests" */;
 			buildPhases = (
+				21CCF9F00256D22F743B34FA /* [CP] Check Pods Manifest.lock */,
 				3672EB3B24297BA500905E57 /* Sources */,
 				3672EB3C24297BA500905E57 /* Frameworks */,
 				3672EB3D24297BA500905E57 /* Resources */,
+				A79DED85636DE5BA64262A0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,6 +440,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16018388E9E95B6B6DC1DF93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NikeCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21CCF9F00256D22F743B34FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NikeCodingChallenge-NikeCodingChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A79DED85636DE5BA64262A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NikeCodingChallenge-NikeCodingChallengeUITests/Pods-NikeCodingChallenge-NikeCodingChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NikeCodingChallenge-NikeCodingChallengeUITests/Pods-NikeCodingChallenge-NikeCodingChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NikeCodingChallenge-NikeCodingChallengeUITests/Pods-NikeCodingChallenge-NikeCodingChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F75C6446E92FB5CF04C78F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NikeCodingChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E379B119E5FC92C8B0C461B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NikeCodingChallenge/Pods-NikeCodingChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NikeCodingChallenge/Pods-NikeCodingChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NikeCodingChallenge/Pods-NikeCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3672EB1A24297B9E00905E57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -434,7 +571,6 @@
 				3672EB2424297B9E00905E57 /* SceneDelegate.swift in Sources */,
 				362723E32433B52100376522 /* Feed.swift in Sources */,
 				362723D92432FBC200376522 /* FeedHomePageViewModel.swift in Sources */,
-				362723E824341B1800376522 /* Obvservable.swift in Sources */,
 				362723BA2432CD7400376522 /* UIImageView+Extensions.swift in Sources */,
 				362723E52433B60600376522 /* AlbumTableViewCell.swift in Sources */,
 			);
@@ -600,6 +736,7 @@
 		};
 		3672EB4924297BA500905E57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0235D1372945389E05610CA /* Pods-NikeCodingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +755,7 @@
 		};
 		3672EB4A24297BA500905E57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C05298B6D9098FB7E2CDFD /* Pods-NikeCodingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -636,6 +774,7 @@
 		};
 		3672EB4C24297BA500905E57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F5DFC0865B23B7979A0738 /* Pods-NikeCodingChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -658,6 +797,7 @@
 		};
 		3672EB4D24297BA500905E57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C392F66E2BC468E2E722354A /* Pods-NikeCodingChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -680,6 +820,7 @@
 		};
 		3672EB4F24297BA500905E57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5A27A7AAECCF1CEE00BDD9 /* Pods-NikeCodingChallenge-NikeCodingChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -700,6 +841,7 @@
 		};
 		3672EB5024297BA500905E57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85650D0B79378D9D5EFFA5A3 /* Pods-NikeCodingChallenge-NikeCodingChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

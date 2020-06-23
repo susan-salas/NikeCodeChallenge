@@ -15,6 +15,7 @@ class AlbumTableViewCell: UITableViewCell {
     private var albumImageView = UIImageView()
     private var albumNameLabel = UILabel()
     private var artistNameLabel = UILabel()
+    var model:Album?
     
 
     override func awakeFromNib() {
@@ -68,7 +69,7 @@ class AlbumTableViewCell: UITableViewCell {
     }
     
     func setCell(with album: Album) {
-        
+        model = album
         albumImageView.loadImage(from: album.artworkUrl100 ?? "")
         albumNameLabel.text = album.name
         artistNameLabel.text = album.artistName

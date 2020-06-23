@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class FeedHomePageViewController: UIViewController {
     
     private var viewModel = HomePageViewModel()
     private var feedTableView = UITableView()
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,20 +25,29 @@ class FeedHomePageViewController: UIViewController {
     }
     
     private func loadData() {
+        
+        viewModel.albumData.bind(to: feedTableView.rx.items(cellIdentifier: AlbumTableViewCell.reuseIdentifier, cellType: AlbumTableViewCell.self)) {  (row,item,cell) in
+            cell.setCell(with: item)
+        }.disposed(by: disposeBag)
+        
         viewModel.loadData()
-        viewModel.albumData.subscribe(observer: self) { (newAlbum, _) in
-            DispatchQueue.main.async {
-            self.feedTableView.reloadData()
-            }
-        }
+        
     }
 
     private func setupTableView() {
-        feedTableView.delegate = self
-        feedTableView.dataSource = self
+
         feedTableView.register(AlbumTableViewCell.self, forCellReuseIdentifier: AlbumTableViewCell.reuseIdentifier)
         feedTableView.estimatedRowHeight = 200
         feedTableView.rowHeight = UITableView.automaticDimension
+        
+        feedTableView.rx.itemSelected
+        .subscribe(onNext: { [weak self] indexPath in
+          let cell = self?.feedTableView.cellForRow(at: indexPath) as? AlbumTableViewCell
+            
+            if let albulm = cell?.model {
+                self?.goToDetailVC(album: albulm)
+            }
+        }).disposed(by: disposeBag)
     }
     private func setConstraints() {
         
@@ -53,25 +65,3 @@ class FeedHomePageViewController: UIViewController {
     }
 }
 
-
-extension FeedHomePageViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.albumData.value.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: AlbumTableViewCell.reuseIdentifier, for: indexPath) as? AlbumTableViewCell {
-            cell.setCell(with: viewModel.albumData.value[indexPath.row])
-            return cell
-        }
-        return UITableViewCell()
-    }
-    
-}
-
-extension FeedHomePageViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.goToDetailVC(album: viewModel.albumData.value[indexPath.row])
-    }
-    
-}
